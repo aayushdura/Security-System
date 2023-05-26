@@ -1,0 +1,158 @@
+.dashboard {
+  &-widget {
+    height: 9rem;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: $white;
+    cursor: pointer;
+
+    &-member {
+      color: $blue;
+      border-bottom: 4px solid $blue;
+    }
+
+    &-commitee {
+      color: $violet;
+      border-bottom: 4px solid $violet;
+    }
+
+    &-building {
+      color: $slate;
+      border-bottom: 4px solid $slate;
+    }
+
+    &-message {
+      color: $dark-yellow;
+      border-bottom: 4px solid $dark-yellow;
+    }
+
+    &-info {
+      width: 40%;
+    }
+
+    &-image-container {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px 0 0 5px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+    }
+
+    &:hover {
+      .dashboard-widget-image-container img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &-card {
+    min-height: 12rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: $white;
+    flex-direction: column;
+
+    &-notice {
+      border-top: 4px solid $dark-yellow;
+    }
+    &-building {
+      border-top: 4px solid $red;
+    }
+    &-complaint,
+    &-service {
+      border-top: 4px solid $sky-blue;
+    }
+    &-calendar {
+      border-top: 4px solid $gray-200;
+    }
+    &-gatekeeper,
+    &-invoice {
+      border-top: 4px solid $brown;
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 2rem;
+      border-bottom: 1px solid $gray-200;
+      padding: 1.5rem 1rem 1rem 1rem;
+    }
+    &-body {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-direction: column;
+      height: 6rem;
+      padding: 0rem 1rem;
+    }
+    &-calendar-item {
+      padding: 0.5rem 0;
+      h2 {
+        font-size: 1rem !important;
+        font-weight: 600;
+        color: $gray-900;
+      }
+    }
+    &-item {
+      padding: 0.5rem 0rem;
+      border-bottom: 1px solid $gray-100;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: fit-content;
+      * {
+        font-size: $font-family-base;
+      }
+      &-tag {
+        height: 100%;
+        background-color: $red;
+        width: 6rem;
+        color: $white;
+        padding: 4px 0.5rem;
+        border-radius: 2px;
+      }
+
+      &-green-tag {
+        background-color: $light-green !important;
+        padding: 4px 0.5rem;
+        border-radius: 2px;
+        color: $white;
+      }
+    }
+  }
+}
+
+// calendar
+
+.fc-button-primary {
+  background-color: $white !important;
+  background-image: none;
+  border-color: $gray-200 !important;
+  color: $gray-900 !important;
+}
+.fc-button-active {
+  background-color: $gray-200 !important;
+  color: $gray-900 !important;
+}
+
+@media (max-width: 768px) {
+  .fc .fc-button-group {
+    display: grid !important;
+  }
+}

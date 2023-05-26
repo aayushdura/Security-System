@@ -1,0 +1,127 @@
+// Here you can add other styles
+
+.custom-scrollbar {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  transition: all 0.5s ease;
+}
+.custom-scrollbar:hover {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $gray-200;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $gray-300;
+  }
+}
+td {
+  text-align: left;
+  border: none;
+}
+.sidebar-title {
+  color: $gray-900;
+  font-weight: 600;
+  margin-left: 4px;
+  font-size: 18px;
+  width: 100%;
+}
+
+// buttons
+
+strong {
+  font-weight: 600;
+  color: &gray-900;
+}
+
+a {
+  color: $gray-900;
+  text-decoration: none;
+}
+
+.font-base {
+  * {
+    font-size: $font-family-base;
+  }
+}
+
+.sidebar-nav .nav-link {
+  border-radius: 10px;
+}
+
+// .nav-group .nav-link.active {
+// }
+
+.nav-group.show {
+  .nav-link.nav-group-toggle {
+    background-color: $primary;
+    color: $white;
+    .nav-icon {
+      color: $white;
+    }
+  }
+  .nav-link.nav-group-toggle {
+    background-color: $primary;
+    color: $white;
+    .nav-icon {
+      color: $white;
+    }
+  }
+  .nav-group-items {
+    .nav-link {
+      .nav-icon {
+        color: $white;
+      }
+    }
+    .nav-link.active {
+      background-color: $white;
+      color: $primary;
+      .nav-icon {
+        color: $primary;
+      }
+    }
+    .nav-link:hover {
+      background-color: $white;
+      color: $primary;
+      .nav-icon {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.profile-image {
+  max-width: 240px;
+}
+.profile-tabs {
+  background-color: #d9d9d9;
+  padding: 0.8rem 1.8rem 0.8rem 2rem;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+td {
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+option {
+  text-transform: capitalize;
+}

@@ -1,0 +1,28 @@
+.drawer {
+  max-width: 750px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-light;
+    color: $white;
+    padding: 1rem 1.5rem;
+  }
+
+  &-body {
+    padding: 1rem 1.5rem;
+    flex: 1;
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    gap: 1rem;
+  }
+}

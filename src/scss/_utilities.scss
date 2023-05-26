@@ -1,0 +1,16 @@
+@each $color, $hex in $color-list {
+  .bg-#{$color} {
+    background-color: $hex;
+  }
+  .text-#{$color} {
+    color: $hex;
+  }
+}
+
+.font-sm {
+  font-size: $font-size-sm;
+}
+
+.font-lg {
+  font-size: $font-size-lg;
+}
